@@ -1,0 +1,13 @@
+SAPI=1
+[main]
+name = de0_nano_expansion
+description = "Altera/Terasic de0 nano board OpenRISC system with expansion board"
+
+backend = quartus
+
+[quartus]
+family = "Cyclone IV E"
+device = EP4CE22F17C6
+sdc_files = data/de0_nano.sdc
+tcl_files = data/pinmap.tcl
+            data/options.tcl
